@@ -52,21 +52,21 @@ AFRAME.registerComponent("door-toggle", {
 With the example code provided above every entity with the "door-toggle" component tag will be given the same click event listener. 
 
 ### Model List
-1.) Door
-2.) Lightswitch
-3.) Clock
-4.) TV
-5.) Entertainment Center
-6.) Couch
-7.) Bookshelf
-8.) Pool Table
-9.) Dining Table
-10.) Chair
-11.) Ceiling Lamp
-12.) Mug
-13.) Rug
-14.) Desk Lamp 
-15.) Desk
+1.) Door</br>
+2.) Lightswitch</br>
+3.) Clock</br>
+4.) TV</br>
+5.) Entertainment Center</br>
+6.) Couch</br>
+7.) Bookshelf</br>
+8.) Pool Table</br>
+9.) Dining Table</br>
+10.) Chair</br>
+11.) Ceiling Lamp</br>
+12.) Mug</br>
+13.) Rug</br>
+14.) Desk Lamp</br> 
+15.) Desk</br>
 
 ## External Sources
 --------------------
