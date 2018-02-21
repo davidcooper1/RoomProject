@@ -73,6 +73,7 @@ With the example code provided above every entity with the "door-toggle" compone
 14.) Chair</br> 
 ![A Pic Was Supposed to Go Here](https://github.com/davidcooper1/RoomProject/raw/master/screenshots/TableSetup.png)
 15.) Rug</br>
+![A Pic Was Supposed to Go Here](https://github.com/davidcooper1/RoomProject/raw/master/screenshots/Rug.png)
 
 ## External Sources
 --------------------
