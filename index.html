@@ -24,11 +24,38 @@
                     });
                 }
             });
+
+            AFRAME.registerComponent("tv-screen", {
+                init: function() {
+                    var on = false;
+                    var self = this.el;
+                    this.el.addEventListener("click", function(evt) {
+                        var newMaterial;
+                        var newLighting;
+                        if (on) {
+                            newMaterial = {shader: "standard", color : "black"};
+                            newLighting = {intensity: "0"};
+                            on = false;
+                        } else {
+                            newMaterial = {shader: "flat", src: "#pokemon"};
+                            newLighting = {type: "point", intensity: "0.3", distance: "10"};
+                            on = true;
+                        }
+                        self.setAttribute("material", newMaterial, true);
+                        self.setAttribute("light", newLighting, false);
+                    });
+                }
+            })
         </script>
     </head>
     <body>
-        <a-scene light="defaultLightsEnabled: false">
+        <a-scene light="defaultLightsEnabled: false" shadow="type=pcfsoft">
+            <a-entity light="type: ambient; intensity: 0.1"></a-entity>
+
             <a-assets>
+                <a-asset-item id="tv" src="assets/led_tv.gltf"/>
+                <a-asset-item id="sofa" src="assets/sofa.gltf"/>
+                <video id="pokemon" src="vids/pokemon.mp4" autoplay="true" loop="true" muted="true"/>
             </a-assets>
 
             <a-sky color="#ECECEC"></a-sky>
@@ -50,16 +77,26 @@
             <a-entity geometry="primitive:box; depth: 20; height:0.1; width: 30" position="0 10 0" material="color: yellow"></a-entity>
 
             <!--North Wall-->
-            <a-entity geometry="primative: box; depth: 0.2; height:10; width: 30" position="0 5 10" material="color: blue"></a-entity>
+            <a-entity geometry="primitive: box; depth: 0.2; height:10; width: 30" position="0 5 10" material="src: url(images/walls.jpg); repeat: 30 10"></a-entity>
             <!--East Wall-->
-            <a-entity geometry="primative: box; depth: 5; height:10; width: 0.2" position="15 5 -7.5" material="color: blue"></a-entity>
-            <a-entity geometry="primative: box; depth: 15; height: 2.5; width: 0.2" position="15 8.75 2.5" material="color: blue"></a-entity>
-            <a-entity geometry="primative: box; depth: 15; height: 7.5; width: 0.2" position="15 3.75 2.5" material="color: blue; opacity: 0.3; transparent: true; metalness: 1"></a-entity>
+            <a-entity geometry="primitive: box; depth: 5; height:10; width: 0.2" position="15 5 -7.5" material="src: url(images/walls.jpg); repeat: 5 10"></a-entity>
+            <a-entity geometry="primitive: box; depth: 15; height: 2.5; width: 0.2" position="15 8.75 2.5" material="src: url(images/walls.jpg); repeat: 15 2.5"></a-entity>
+            <a-entity geometry="primitive: box; depth: 15; height: 7.5; width: 0.2" position="15 3.75 2.5" material="color: blue; opacity: 0.3; transparent: true; metalness: 1"></a-entity>
             <!--South Wall-->
-            <a-entity geometry="primative: box; depth: 0.2; height:10; width: 30" position="0 5 -10" material="color: blue"></a-entity>
+            <a-entity geometry="primitive: box; depth: 0.2; height:10; width: 30" position="0 5 -10" material="src: url(images/walls.jpg); repeat: 30 10"></a-entity>
 
             <!-- Grass Outside-->
             <a-entity geometry="primitive: box; depth: 50; height: 0.05; width: 50" position="0 0 0" material="color: green"></a-entity>
+
+            <a-entity position="0 1 -9" rotation="0 0 0">
+                <a-gltf-model src="#tv" scale="0.2 0.2 0.2" shadow="cast: true"></a-gltf-model>
+                <a-entity tv-screen class="intersectable" geometry="primitive: box; depth: 0.01; height: 1.4; width: 2.5" material="color: black" position="0 0.9 0.148"></a-entity>
+            </a-entity>
+
+            <a-entity position="6 0 -5" rotation="0 90 0">
+                <a-gltf-model src="#sofa" scale="0.002 0.002 0.002"></a-gltf-model>
+            </a-entity>
+
         </a-scene>
     </body>
 </html>
