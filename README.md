@@ -14,7 +14,7 @@ TODO: Make video and put it here.
 
 ### Handling Click Events
 
-TODO: Add in screenshot of TV being hovered over.
+![A Pic Was Supposed to Go Here](https://github.com/davidcooper1/RoomProject/raw/master/screenshots/Click.png)
 
 All click events in this program are handled by a three step process.
 
