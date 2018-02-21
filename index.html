@@ -5,11 +5,12 @@
         <script src="libs/aframe.min.js"></script>
         <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v1.14.0/dist/aframe-extras.min.js"></script>
         <script>
+            // Set up the component to handle turning on and off the main lights.
             AFRAME.registerComponent("toggle-main-lights", {
                 init: function() {
                     var state = true;
                     var self = this.el;
-                    this.el.addEventListener("click", function(evt) {
+                    self.addEventListener("click", function(evt) {
                         var newIntensity;
                         if (state) {
                             newIntensity = 0;
@@ -29,11 +30,12 @@
                 }
             });
 
+            // Set up the component to handle turning on and off the TV screen.
             AFRAME.registerComponent("tv-screen", {
                 init: function() {
                     var on = false;
                     var self = this.el;
-                    this.el.addEventListener("click", function(evt) {
+                    self.addEventListener("click", function(evt) {
                         var newMaterial;
                         var newLighting;
                         if (on) {
@@ -52,11 +54,12 @@
                 }
             });
 
+            // Set up the component to handle opening and closing the door.
             AFRAME.registerComponent("door-toggle", {
                 init: function() {
                     var open = false;
                     var self = this.el;
-                    this.el.addEventListener("click", function(evt) {
+                    self.addEventListener("click", function(evt) {
                         if (open) {
                             open = false;
                             self.emit("doorClosing");
@@ -68,12 +71,12 @@
                 }
             });
 
+            // Set up component to handle turning on and off the desk lamp light.
             AFRAME.registerComponent("desk-lamp-toggle", {
                 init: function() {
                     var on = false;
                     var self = this.el;
-                    this.el.addEventListener("click", function(evt) {
-                        console.log("CLICK");
+                    self.addEventListener("click", function(evt) {
                         var newLighting;
                         if (on) {
                             on = false;
