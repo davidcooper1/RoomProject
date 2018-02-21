@@ -69,5 +69,12 @@ With the example code provided above every entity with the "door-toggle" compone
 15.) Desk
 
 ## External Sources
-[Seamless Carpet Texture](https://hhh316.deviantart.com/art/Seamless-Carpet-Texture-270563565)<br>
-[Seamless Beige Wall Texture](https://www.sketchuptextureclub.com/textures/architecture/plaster/painted-plaster/fallingwater-house-plaster-wall-texture-seamless-06925)
+--------------------
+### Textures
+[Seamless Carpet Texture](https://hhh316.deviantart.com/art/Seamless-Carpet-Texture-270563565)</br>
+[Seamless Beige Wall Texture](https://www.sketchuptextureclub.com/textures/architecture/plaster/painted-plaster/fallingwater-house-plaster-wall-texture-seamless-06925)</br>
+[Seamless White Wall Texture](http://seamless-pixels.blogspot.com/2012/09/free-seamless-stucco-wall-plaster.html)</br>
+[Seamless Glass Wall Texture](https://1-background.com/glass_1.htm)</br>
+[Seamless Grass Texture](https://mushin3d.deviantart.com/art/Seamless-tileable-Grass-texture-516838656)
+[Seamless Rug Texture](http://textures101.com/view/2236/Carpet/Carpet_Seamless)
+
