@@ -60,7 +60,7 @@ With the example code provided above every entity with the "door-toggle" compone
 6.) Couch
 7.) Bookshelf
 8.) Pool Table
-9.) Small Table
+9.) Dining Table
 10.) Chair
 11.) Ceiling Lamp
 12.) Mug
@@ -84,5 +84,9 @@ With the example code provided above every entity with the "door-toggle" compone
 [TV](https://skfb.ly/68ZMs)</br>
 [Desk](https://skfb.ly/XB9H)</br>
 [Entertainment Center](https://skfb.ly/69DnS)</br>
-
-
+[Pool Table](https://skfb.ly/VVr8)</br>
+[Chair](https://skfb.ly/6v6XY)</br>
+[Dining Table](https://skfb.ly/6v6WT)</br>
+[Lamp](https://skfb.ly/6wqyI)</br>
+[Clock](https://skfb.ly/6rvzQ)</br>
+[Mug](https://skfb.ly/ZKn9)
