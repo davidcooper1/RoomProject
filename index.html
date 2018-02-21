@@ -8,15 +8,17 @@
             AFRAME.registerComponent("toggle-lighting", {
                 init: function() {
                     var state = true;
-                    console.log(this.el);
+                    var self = this.el;
                     this.el.addEventListener("click", function(evt) {
                         var newIntensity;
                         if (state) {
                             newIntensity = 0;
                             state = false;
+                            document.querySelector("#Lever").emit("lightOff");
                         } else {
                             newIntensity = 0.75;
                             state = true;
+                            document.querySelector("#Lever").emit("lightOn")
                         }
 
                         var lights = document.querySelectorAll(".MainLighting");
@@ -61,6 +63,9 @@
                 <a-asset-item id="entertainment_center" src="assets/entertainment_center.gltf"/>
                 <a-asset-item id="bookshelf" src="assets/bookshelf.gltf"/>
                 <a-asset-item id="ceiling_light" src="assets/ceiling_light.gltf"/>
+                <a-asset-item id="dining_table" src="assets/dining_table.gltf"/>
+                <a-asset-item id="chair" src="assets/chair.gltf"/>
+                <a-asset-item id="pool_table" src="assets/pool_table.gltf"/>
                 <video id="pokemon" src="vids/pokemon.mp4" autoplay="true" loop="true" muted="true"/>
             </a-assets>
 
@@ -72,12 +77,20 @@
                 </a-camera>
             </a-entity>
 
-            <a-entity toggle-lighting class="intersectable" geometry="primitive:box; depth: 1; height: 1; width: 1" material="shader:flat; color: blue" position="0 1 0"></a-entity>
+            <!-- Light Switch -->
+            <a-entity toggle-lighting class="intersectable" position="-13.5, 1.5, 9.9">
+                <a-entity geometry="primitive: box; depth: 0.1; height: 0.5; width: 0.25" material="color: lightgrey"></a-entity>
+                <a-entity id="Lever" geometry="primitive: box; depth: 0.3; height: 0.1; width: 0.1" material="color: white" rotation="45 0 0">
+                    <a-animation attribute="rotation" begin="lightOn" from="-45 0 0" to="45 0 0" dur="500"></a-animation>
+                    <a-animation attirbute="rotation" begin="lightOff" from="45 0 0" to="-45 0 0" dur="500"></a-animation>
+                </a-entity>
+            </a-entity>
+
             <!--Floor -->
             <a-entity geometry="primitive:box; depth: 20; height:0.1; width: 30" position="0 0 0" material="src: url(images/carpet.jpg); repeat: 30 20; metalness: 0; roughness: 1"></a-entity>
 
             <!--Ceiling -->
-            <a-entity geometry="primitive:box; depth: 20; height:0.1; width: 30" position="0 10 0" material="color: yellow; metalness: 0; roughness: 1"></a-entity>
+            <a-entity geometry="primitive:box; depth: 20; height:0.1; width: 30" position="0 10 0" material="src: url(images/ceiling.jpg); repeat: 10 15; metalness: 0; roughness: 1"></a-entity>
 
             <!--North Wall-->
             <a-entity geometry="primitive: box; depth: 0.2; height:10; width: 30" position="0 5 10" material="src: url(images/walls.jpg); repeat: 30 10; metalness: 0; roughness: 1"></a-entity>
@@ -115,7 +128,7 @@
                 <a-gltf-model src="#entertainment_center" scale="0.235 0.235 0.235"></a-gltf-model>
             </a-entity>
 
-            <!-- Ceiling Light -->
+            <!-- Ceiling Lights -->
             <a-entity position="-5 3 0">
                 <a-entity class="MainLighting" light="type: point; intensity: 0.75; distance: 50" position="0 2 0"></a-entity>
                 <a-gltf-model src="#ceiling_light" scale="25 25 25"></a-gltf-model>
@@ -126,14 +139,42 @@
                 <a-gltf-model src="#ceiling_light" scale="25 25 25"></a-gltf-model>
             </a-entity>
 
+            <!-- Dining Table -->
+            <a-entity position="7 0 6">
+                <a-gltf-model src="#dining_table" scale="1.5 1.5 1.5"></a-gltf-model>
+            </a-entity>
+
+            <!-- Dining Chairs -->
+            <a-entity position="7 0 8">
+                <a-gltf-model src="#chair" scale="15 15 15"></a-gltf-model>
+            </a-entity>
+
+            <a-entity position="10 0 7" rotation="0 90 0">
+                <a-gltf-model src="#chair" scale="15 15 15"></a-gltf-model>
+            </a-entity>
+
+            <!-- Pool Table -->
+            <a-entity position="10 0 0">
+                <a-gltf-model src="#pool_table" scale="0.04 0.04 0.04"></a-gltf-model>
+            </a-entity>
+
             <!-- North Baseboard -->
             <a-entity geometry="primitive: cylinder; radius: 0.05; height: 30" rotation="0 0 90" position="0 0.05 -9.9" material="color: white"></a-entity>
+
+            <!-- North Crown Molding -->
+            <a-entity geometry="primitive: cylinder; radius: 0.05; height: 30" rotation="0 0 90" position="0 9.95 -9.9" material="color: white"></a-entity>
 
             <!-- South Baseboard -->
             <a-entity geometry="primitive: cylinder; radius: 0.05; height: 30" rotation="0 0 90" position="0 0.05 9.9" material="color: white"></a-entity>
 
+            <!-- South Crown Molding -->
+            <a-entity geometry="primitive: cylinder; radius: 0.05; height: 30" rotation="0 0 90" position="0 9.95 9.9" material="color: white"></a-entity>
+
             <!-- East Baseboard -->
             <a-entity geometry="primitive: cylinder; radius: 0.05; height: 20" rotation="90 0 0" position="14.9 0.05 0" material="color: white"></a-entity>
+
+            <!-- East Crown Molding -->
+            <a-entity geometry="primitive: cylinder; radius: 0.05; height: 20" rotation="90 0 0" position="14.9 9.95 0" material="color: white"></a-entity>
         </a-scene>
     </body>
 </html>
