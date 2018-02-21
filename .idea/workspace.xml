@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d46803aa-a36d-4cf4-9244-bb607fc09e7d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/AUTHOR" afterPath="$PROJECT_DIR$/assets/AUTHOR" />
-      <change beforePath="$PROJECT_DIR$/assets/textures/Material__66_baseColor.jpeg" afterPath="$PROJECT_DIR$/assets/textures/Material__66_baseColor.jpeg" />
-      <change beforePath="$PROJECT_DIR$/assets/textures/divan_baseColor.jpg" afterPath="$PROJECT_DIR$/assets/textures/divan_baseColor.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/textures/padsh_baseColor.jpg" afterPath="$PROJECT_DIR$/assets/textures/padsh_baseColor.jpg" />
-      <change beforePath="$PROJECT_DIR$/images/carpet.jpg" afterPath="$PROJECT_DIR$/images/carpet.jpg" />
-      <change beforePath="$PROJECT_DIR$/images/ceiling.jpg" afterPath="$PROJECT_DIR$/images/ceiling.jpg" />
-      <change beforePath="$PROJECT_DIR$/images/grass.jpg" afterPath="$PROJECT_DIR$/images/grass.jpg" />
-      <change beforePath="$PROJECT_DIR$/images/walls.jpg" afterPath="$PROJECT_DIR$/images/walls.jpg" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="212" column="133" lean-forward="false" selection-start-line="212" selection-start-column="133" selection-end-line="212" selection-end-column="133" />
+            <state relative-caret-position="648">
+              <caret line="261" column="122" lean-forward="false" selection-start-line="261" selection-start-column="122" selection-end-line="261" selection-end-column="122" />
               <folding />
             </state>
           </provider>
@@ -147,12 +139,12 @@
       <option name="presentableId" value="Default" />
       <updated>1519148578368</updated>
       <workItem from="1519148579975" duration="1775000" />
-      <workItem from="1519157553591" duration="43056000" />
+      <workItem from="1519157553591" duration="45769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44831000" />
+    <option name="totallyTimeSpent" value="47544000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -198,8 +190,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="212" column="133" lean-forward="false" selection-start-line="212" selection-start-column="133" selection-end-line="212" selection-end-column="133" />
+        <state relative-caret-position="648">
+          <caret line="261" column="122" lean-forward="false" selection-start-line="261" selection-start-column="122" selection-end-line="261" selection-end-column="122" />
           <folding />
         </state>
       </provider>

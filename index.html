@@ -72,7 +72,6 @@
                 init: function() {
                     var on = false;
                     var self = this.el;
-                    console.log("Component registered");
                     this.el.addEventListener("click", function(evt) {
                         console.log("CLICK");
                         var newLighting;
@@ -120,6 +119,7 @@
 
             <!-- Light Switch -->
             <a-entity toggle-main-lights class="intersectable" position="-13.5, 1.5, 9.9">
+                <a-text value="Click to Toggle Light" align="center" width="6" position="0 1 -1" color="blue" rotation="0 180 0"></a-text>
                 <a-entity geometry="primitive: box; depth: 0.1; height: 0.5; width: 0.25" material="color: lightgrey"></a-entity>
                 <a-entity id="Lever" geometry="primitive: box; depth: 0.3; height: 0.1; width: 0.1" material="color: white" rotation="45 0 0">
                     <a-animation attribute="rotation" begin="lightOn" from="-45 0 0" to="45 0 0" dur="500"></a-animation>
@@ -155,6 +155,7 @@
 
             <!-- TV -->
             <a-entity position="0 1 -9" rotation="0 0 0">
+                <a-text value="Click to Toggle Television" align="center" width="6" position="0 3 0" color="blue"></a-text>
                 <a-gltf-model src="#tv" scale="0.2 0.2 0.2"></a-gltf-model>
                 <a-entity tv-screen class="intersectable" geometry="primitive: box; depth: 0.01; height: 1.4; width: 2.5" material="color: black" position="0 0.9 0.148"></a-entity>
             </a-entity>
@@ -211,11 +212,14 @@
 
             <!-- Desk Lamp -->
             <a-entity desk-lamp-toggle class="intersectable" position="-9.5 1.3 -9.2" light="type: point; intensity: 0; distance: 15">
+                <a-text value="Click to Toggle Light" align="center" width="6" position="0 1 0" color="blue"></a-text>
                 <a-gltf-model src="#lamp" scale="0.02 0.02 0.02"></a-gltf-model>
             </a-entity>
 
+            <a-text value="Click to Open/Close Door" align="center" width="6" position="-13.5 2.5 7" rotation="0 90 0" color="blue"></a-text>
             <!-- Door -->
             <a-entity door-toggle class="intersectable" position="-15 2.5 8" rotation="0 0 0">
+
                 <a-entity geometry="primitive: box; depth: 3; height: 5; width: 0.1" material="color: brown" position="0 0 -1.5"></a-entity>
                 <a-entity geometry="primitive: sphere; radius: 0.25" material="color:yellow" position="0 0 -2.5"></a-entity>
                 <a-animation attribute="rotation" begin="doorOpening" from="0 0 0" to="0 90 0" dur="500"></a-animation>
@@ -252,6 +256,13 @@
 
             <!-- East Crown Molding -->
             <a-entity geometry="primitive: cylinder; radius: 0.05; height: 20" rotation="90 0 0" position="14.9 9.95 0" material="color: white"></a-entity>
+
+            <!-- West Baseboard -->
+            <a-entity geometry="primitive: cylinder; radius: 0.05; height: 2" rotation="90 0 0" position="-14.9 0.05 9" material="color:white"></a-entity>
+            <a-entity geometry="primitive: cylinder; radius: 0.05; height: 15" rotation="90 0 0" position="-14.9 0.05 -2.5" material="color:white"></a-entity>
+
+            <!-- West Crown Molding -->
+            <a-entity geometry="primitive: cylinder; radius: 0.05; height: 20" rotation="90 0 0" position="-14.9 9.95 0" material="color: white"></a-entity>
         </a-scene>
     </body>
 </html>
