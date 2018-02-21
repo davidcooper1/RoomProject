@@ -56,13 +56,13 @@ With the example code provided above every entity with the "door-toggle" compone
 2.) Lightswitch
 3.) Clock
 4.) TV
-5.) TV Stand
+5.) Entertainment Center
 6.) Couch
 7.) Bookshelf
 8.) Pool Table
 9.) Small Table
 10.) Chair
-11.) Chandelier
+11.) Ceiling Lamp
 12.) Mug
 13.) Rug
 14.) Desk Lamp 
@@ -75,6 +75,14 @@ With the example code provided above every entity with the "door-toggle" compone
 [Seamless Beige Wall Texture](https://www.sketchuptextureclub.com/textures/architecture/plaster/painted-plaster/fallingwater-house-plaster-wall-texture-seamless-06925)</br>
 [Seamless White Wall Texture](http://seamless-pixels.blogspot.com/2012/09/free-seamless-stucco-wall-plaster.html)</br>
 [Seamless Glass Wall Texture](https://1-background.com/glass_1.htm)</br>
-[Seamless Grass Texture](https://mushin3d.deviantart.com/art/Seamless-tileable-Grass-texture-516838656)
+[Seamless Grass Texture](https://mushin3d.deviantart.com/art/Seamless-tileable-Grass-texture-516838656)</br>
 [Seamless Rug Texture](http://textures101.com/view/2236/Carpet/Carpet_Seamless)
+
+### Models
+[Sofa](https://skfb.ly/6sVEt)</br>
+[Ceiling Lamp](https://skfb.ly/6uQAH)</br>
+[TV](https://skfb.ly/68ZMs)</br>
+[Desk](https://skfb.ly/XB9H)</br>
+[Entertainment Center](https://skfb.ly/69DnS)</br>
+
 
