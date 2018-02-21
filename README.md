@@ -54,19 +54,26 @@ With the example code provided above every entity with the "door-toggle" compone
 ### Model List
 1.) Door</br>
 2.) Lightswitch</br>
-3.) Clock</br>
-4.) TV</br>
-5.) Entertainment Center</br>
+![A Pic Was Supposed to Go Here](https://github.com/davidcooper1/RoomProject/raw/master/screenshots/DoorAndSwitch.png) 
+3.) Desk</br>
+4.) Desk Lamp</br>
+5.) Mug</br>
+![A Pic Was Supposed to Go Here](https://github.com/davidcooper1/RoomProject/raw/master/screenshots/DeskSetup.png)
 6.) Couch</br>
-7.) Bookshelf</br>
-8.) Pool Table</br>
-9.) Dining Table</br>
-10.) Chair</br>
+7.) Entertainment Center</br>
+8.) TV</br>
+![A Pic Was Supposed to Go Here](https://github.com/davidcooper1/RoomProject/raw/master/screenshots/CouchSetup.png)
+9.) Book Shelf</br>
+10.) Pool Table</br>
+![A Pic Was Supposed to Go Here](https://github.com/davidcooper1/RoomProject/raw/master/screenshots/ShelfAndTable.png)
 11.) Ceiling Lamp</br>
-12.) Mug</br>
-13.) Rug</br>
-14.) Desk Lamp</br> 
-15.) Desk</br>
+12.) Clock</br>
+![A Pic Was Supposed to Go Here](https://github.com/davidcooper1/RoomProject/raw/master/screenshots/ClockAndLights.png)
+13.) Dining Table</br>
+14.) Chair</br> 
+![A Pic Was Supposed to Go Here](https://github.com/davidcooper1/RoomProject/raw/master/screenshots/TableSetup.png)
+15.) Rug</br>
+![A Pic Was Supposed to Go Here](https://github.com/davidcooper1/RoomProject/raw/master/screenshots/Rug.png)
 
 ## External Sources
 --------------------
